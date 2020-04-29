@@ -1,5 +1,4 @@
 ---
-# defaults file for rb.gortr
 
 OCTORPKI:
   # string Base directory to store certificates
