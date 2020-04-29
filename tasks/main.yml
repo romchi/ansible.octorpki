@@ -47,12 +47,21 @@
   tags:
     - install
 
+- name: Download TAL from ARIN site
+  get_url: 
+    url: https://www.arin.net/resources/manage/rpki/arin-rfc7730.tal
+    dest: /usr/share/octorpki/tals/arin.tal
+  tags:
+    - install
+
 - name: Enable OctoRPKI service
   service:
     name: octorpki
     enabled: yes
   notify:
     - restart OctoRPKI
+  tags:
+    - install
 
 - name: Prepare OctoRPKI config
   template:
