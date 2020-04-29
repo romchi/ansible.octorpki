@@ -1,0 +1,7 @@
+---
+# handlers file for rb.gortr
+
+- name: restart OctoRPKI
+  service:
+    name: octorpki
+    state: restarted

@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include rb.octorpki"
+      include_role:
+        name: "rb.octorpki"

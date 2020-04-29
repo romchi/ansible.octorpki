@@ -1,0 +1,1 @@
+OCTORPKI_ARGS={% for parent in OCTORPKI %}{% for key, value in parent.items() %}{% if value is number %}-{{ key }}={{ value }} {% elif value|length > 1 %}-{{ key }}="{{ value }}" {% endif %}{% endfor %}{% endfor %}

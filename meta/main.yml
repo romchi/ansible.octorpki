@@ -1,0 +1,23 @@
+galaxy_info:
+  author: Roman Bulakh
+  description: Install Cloudflare OctoRPKI service
+  company: Mirohost
+
+  role_name: octorpki
+
+  license: Apache-2.0
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: Debian
+      versions:
+        - buster
+    - name: Ubuntu
+      versions:
+        - bionic
+
+  galaxy_tags:
+    - rpki
+    - octorpki
+
+dependencies: []
