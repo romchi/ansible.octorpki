@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: "Include rb.octorpki"
+    - name: "Include ansible.octorpki"
       include_role:
-        name: "rb.octorpki"
+        name: "ansible.octorpki"
