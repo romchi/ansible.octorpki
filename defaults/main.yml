@@ -1,49 +1,49 @@
 ---
 
-OCTORPKI:
+octorpki:
   # string Base directory to store certificates
-  - cache: "cache/"
+  cache: "cache/"
   # bool Cors enable credentials
-  - cors.creds: "false"
+  cors.creds: "false"
   # string Cors origins separated by comma
-  - cors.origins: "*"
+  cors.origins: "*"
   # string Listening address
-  - http.addr: "0.0.0.0:8080"
+  http.addr: "0.0.0.0:8080"
   # bool Enable cache header
-  - http.cache: "true"
+  http.cache: "true"
   # string Information URL
-  - http.info: "/infos"
+  http.info: "/infos"
   # string Prometheus metrics endpoint
-  - http.metrics: "/metrics"
+  http.metrics: "/metrics"
   # string Log level
-  - loglevel: "info"
+  loglevel: "info"
   # bool Use manifests file to explore instead of going into the repository
-  - manifest.use: "true"
+  manifest.use: "true"
   # string Select output mode (server/oneoff)
-  - mode: "server"
+  mode: "server"
   # string Output ROA file or URL
-  - output.roa: "roa.json"
+  output.roa: "roa.json"
   # bool Sign output (GoRTR compatible)
-  - output.sign: "false"
+  output.sign: "false"
   # string ECDSA signing key
-  - output.sign.key: ""
+  output.sign.key: ""
   # string Validity
-  - output.sign.validity: "1h"
+  output.sign.validity: "1h"
   # bool Wait until stable state to create the file
-  - output.wait: "true"
+  output.wait: "true"
   # string Revalidation interval
-  - refresh string: "20m"
+  refresh string: "20m"
   # bool Enable RRDP fetching
-  - rrdp: "true"
+  rrdp: "true"
   # string Save RRDP state
-  - rrdp.file: "rrdp.json"
+  rrdp.file: "rrdp.json"
   # int RRDP security mode (0 = no check, 1 = match rsync domain, 2 = match path)
-  - rrdp.mode: 1
+  rrdp.mode: 1
   # string The rsync binary to use
-  - rsync.bin: "/usr/bin/rsync"
+  rsync.bin: "/usr/bin/rsync"
   # string Rsync command timeout
-  - rsync.timeout: "20m"
+  rsync.timeout: "20m"
   # string Name of the TALs
-  - tal.name: "AFRINIC,APNIC,ARIN,LACNIC,RIPE"
+  tal.name: "AFRINIC,APNIC,ARIN,LACNIC,RIPE"
   # List of TAL separated by comma
-  - tal.root: "tals/afrinic.tal,tals/apnic.tal,tals/arin.tal,tals/lacnic.tal,tals/ripe.tal"
+  tal.root: "tals/afrinic.tal,tals/apnic.tal,tals/arin.tal,tals/lacnic.tal,tals/ripe.tal"
