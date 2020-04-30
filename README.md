@@ -4,7 +4,7 @@ Install and configure [Cloudflare OctoRPKI](https://github.com/cloudflare/cfrpki
 
 ## Requirements
 
-No requirements, install and use.
+None.
 
 
 ## Role Variables
