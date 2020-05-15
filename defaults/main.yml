@@ -32,7 +32,7 @@ octorpki:
   # bool Wait until stable state to create the file
   output.wait: "true"
   # string Revalidation interval
-  refresh string: "20m"
+  refresh: "20m"
   # bool Enable RRDP fetching
   rrdp: "true"
   # string Save RRDP state
